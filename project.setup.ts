@@ -25,7 +25,3 @@
 //    - Android:
 //    - iOS:
 // 6. Add required scripts in the package.json file
-
-// 8. Add Global files:
-//
-// 10.
