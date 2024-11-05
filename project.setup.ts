@@ -7,7 +7,7 @@
 //    - Android: Replace with created icons folder
 //    - iOS: Replace icons image in Xcode
 // 3. Add fonts for both iOS & Android:
-//    - Link using this command: npm i react-native-asset
+//    - Link using this command: npx react-native-asset
 // 4. Typescript config files:
 //    - tsconfig.json, metro.config.js, babel.config.js
 
