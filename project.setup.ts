@@ -15,7 +15,8 @@
 //    -     iconsFontNames: ['MaterialCommunityIcons.ttf','MaterialIcons.ttf','Ionicons.ttf']
 //    -  ]
 //    -  apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-//    - iOS: add in plist file 
+//    - iOS: add in plist file
+// 6. Add all required folders and files (log, navigationRef, validation, keyboardListeners, api)
 
 // ==============================
 // Not Completed Setup
@@ -26,5 +27,5 @@
 // 6. Add required scripts in the package.json file
 
 // 8. Add Global files:
-// 9. Add all required folders and files (log, navigationRef, validation, keyboardListeners, api)
+//
 // 10.
