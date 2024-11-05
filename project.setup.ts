@@ -10,6 +10,12 @@
 //    - Link using this command: npx react-native-asset
 // 4. Typescript config files:
 //    - tsconfig.json, metro.config.js, babel.config.js
+// 5. Add icon plugins like Ionicons, MaterialCommunityIcons, and Material Icons
+//    - project.ext.vectoricons = [
+//    -     iconsFontNames: ['MaterialCommunityIcons.ttf','MaterialIcons.ttf','Ionicons.ttf']
+//    -  ]
+//    -  apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 
 // ==============================
 // Not Completed Setup
@@ -18,7 +24,7 @@
 //    - Android:
 //    - iOS:
 // 6. Add required scripts in the package.json file
-// 7. Add icon plugins like Ionicons, MaterialCommunityIcons, and Material Icons
+
 // 8. Add Global files:
 // 9. Add all required folders and files (log, navigationRef, validation, keyboardListeners, api)
 // 10.
