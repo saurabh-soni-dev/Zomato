@@ -1,3 +1,4 @@
 import useKeyboardOffsetHeight from './useKeyboardOffsetHeight';
+import {useAuthNavigation} from './useAppNavigation';
 
-export {useKeyboardOffsetHeight};
+export {useKeyboardOffsetHeight, useAuthNavigation};

@@ -1,17 +1,13 @@
-import {View, Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {navigationRef} from '@utility/navigationRef';
 import React from 'react';
+import RootStack from './stacks/RootStack';
 
 const Route = () => {
   return (
-    <View>
-      <Text>Route</Text>
-      <Text>Route</Text>
-      <Text>Route</Text>
-      <Text>Route</Text>
-      <Text>Route</Text>
-      <Text>Route</Text>
-      <Text>Route</Text>
-    </View>
+    <NavigationContainer ref={navigationRef}>
+      <RootStack />
+    </NavigationContainer>
   );
 };
 
