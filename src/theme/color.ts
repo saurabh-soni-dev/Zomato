@@ -1,3 +1,15 @@
 export default {
+  primary: '#E23744',
+  primaryLight: '#EF4F5F',
+  text: '#222',
+  activeLight: '#ECFAF1',
+  secondary: '#2D2D2D',
+  tertiary: '#F4F4F2',
+  background: '#fff',
+  backgroundLight: '#F4F6FC',
+  border: '#E5E9EF',
+  lightText: '#9197A6',
+  active: '#019A51',
+  dark: '#18171C',
   white: '#ffffff',
 };

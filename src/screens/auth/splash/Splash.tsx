@@ -1,33 +1,58 @@
-import { FocusAwareStatusBar } from '@components';
-import { useAuthNavigation } from '@hooks';
-import React, { FC } from 'react';
-import { StyleSheet, View } from 'react-native';
+import {imageIndex} from '@assets';
+import {CustomText, FocusAwareStatusBar} from '@components';
+import {color} from '@theme';
+import {screenHeight, screenWidth} from '@utility/Constant';
+import {resetAndNavigate} from '@utility/NavigationUtils';
+import React, {FC, useEffect} from 'react';
+import {Image, Platform, StyleSheet, View} from 'react-native';
 
 const Splash: FC = () => {
-  const nav = useAuthNavigation();
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      resetAndNavigate('Login');
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <View style={styles.container}>
       <FocusAwareStatusBar
-        statusBarStyle="light-content"
-        backgroundColor="#6a51ae"
+        hidden={Platform.OS !== 'android'}
+        backgroundColor={color.primary}
       />
-      <View style={styles.mainContainer}>ß</View>
+      <View style={styles.mainContainer}>
+        <Image source={imageIndex.logo} style={styles.logoImage} />
+        <CustomText
+          variant="h5"
+          fontFamily="Okra-Medium"
+          color={color.activeLight}
+          style={styles.msgText}>
+          Carbon and Plastic Neutral{'\n'} Deliveries in India
+        </CustomText>
+      </View>
     </View>
   );
 };
 
-export default Splash;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#6a51ae',
+    backgroundColor: color.primary,
   },
   mainContainer: {
     flex: 1,
-    backgroundColor: 'red',
+    backgroundColor: color.primary,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logoImage: {
+    width: screenWidth * 0.6,
+    height: screenHeight * 0.09,
+    resizeMode: 'contain',
+  },
+  msgText: {
+    textAlign: 'center',
+  },
 });
+
+export default Splash;

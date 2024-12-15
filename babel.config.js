@@ -27,6 +27,7 @@ module.exports = function (api) {
             '@hooks': './src/hooks/index.ts',
             '@i18n': './src/i18n',
             '@navigation': './src/navigation',
+            '@unistyles': './src/unistyles',
             '@screens': './src/screens',
             '@utility': './src/utility',
           },

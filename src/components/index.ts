@@ -1,3 +1,3 @@
 import FocusAwareStatusBar from './common/FocusAwareStatusBar';
-
-export {FocusAwareStatusBar};
+import CustomText from './common/CustomText';
+export {FocusAwareStatusBar, CustomText};

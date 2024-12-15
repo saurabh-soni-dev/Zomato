@@ -17,7 +17,7 @@ async function replace(routeName: string, params?: object) {
     navigationRef.dispatch(StackActions.replace(routeName, params));
   }
 }
-async function resetAndNavigate(routeName: string, params?: object) {
+async function resetAndNavigate(routeName: string) {
   if (isReady) {
     navigationRef.dispatch(
       CommonActions.reset({
